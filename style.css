@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  color: palegreen;
+  background: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: palegreen;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: palegreen;
+}
+
+.navbar {
+  color: black;
+  background: palegreen;
+}
+.navbar ul {
+  display: flex;
+  flex: 1;
+  list-style: none;
+}
+.navbar ul li {
+  margin-right: 3vw;
+}
+
+.Project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+}
+
+/*# sourceMappingURL=style.css.map */

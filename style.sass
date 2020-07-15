@@ -1,3 +1,8 @@
+.cursor
+    animation: color-change 0.5s infinite alternate
+    width: 0.5rem
+    height: 1rem
+
 body 
     font-family: 'Roboto Mono', monospace
     color: palegreen
@@ -26,3 +31,27 @@ a
     display: flex
     flex-wrap: wrap
     width: 60vw
+
+@keyframes color-change 
+    from
+        background-color: black
+    to
+        background-color: palegreen
+
+@-webkit-keyframes color-change 
+    from
+        background-color: black
+    to
+        background-color: palegreen
+
+@-moz-keyframes color-change
+    from
+        background-color: black
+    to
+        background-color: palegreen
+
+@-ms-keyframes color-change
+    from
+        background-color: black
+    to
+        background-color: palegreen

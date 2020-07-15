@@ -1,39 +1,57 @@
+.cursor {
+  animation: color-change 0.5s infinite alternate;
+  width: 0.5rem;
+  height: 1rem; }
+
 body {
   font-family: "Roboto Mono", monospace;
   color: palegreen;
-  background: black;
-}
+  background: black; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
   color: palegreen;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-  background-color: palegreen;
-}
+  text-decoration: none; }
+  a:hover {
+    color: black;
+    background-color: palegreen; }
 
 .navbar {
   color: black;
-  background: palegreen;
-}
-.navbar ul {
-  display: flex;
-  flex: 1;
-  list-style: none;
-}
-.navbar ul li {
-  margin-right: 3vw;
-}
+  background: palegreen; }
+  .navbar ul {
+    display: flex;
+    flex: 1;
+    list-style: none; }
+    .navbar ul li {
+      margin-right: 3vw; }
 
 .Project {
   display: flex;
   flex-wrap: wrap;
-  width: 60vw;
-}
+  width: 60vw; }
+
+@keyframes color-change {
+  from {
+    background-color: black; }
+  to {
+    background-color: palegreen; } }
+@-webkit-keyframes color-change {
+  from {
+    background-color: black; }
+  to {
+    background-color: palegreen; } }
+@-moz-keyframes color-change {
+  from {
+    background-color: black; }
+  to {
+    background-color: palegreen; } }
+@-ms-keyframes color-change {
+  from {
+    background-color: black; }
+  to {
+    background-color: palegreen; } }
 
 /*# sourceMappingURL=style.css.map */

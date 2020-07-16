@@ -25,21 +25,56 @@
 	<div class='cursor'></div>
 	<ul>
             <li>This very site!</li>
-            <li><a href='/WeatherApp'>Weather App</a></li>
-            <li><a href='https://burnett-photo-tagging.herokuapp.com/'>Find Waldo App</a></li>
-	    <li><a href='https://burnett-react-blogger.herokuapp.com/'>Soapbox (a tumblresque website) </a></li>
-	    <li><a href='/Battleship'>Battleship</a></li>
-            <li><a href='/reactLibrary'>React Library</a></li>
-            <li><a href='/PocketDocket'>Pocket Docket</a></li>
-	    <li>
+            <li id='weather'><a href='/WeatherApp'>Weather App</a>
+		 <p class='desc'>A simple weather application that uses the
+		    openweather API. Currently, only city names work in the
+		    query.</p>
+	    </li>
+            <li id='waldo'><a 
+                href='https://burnett-photo-tagging.herokuapp.com/'>
+		    Find Waldo App</a>
+		<p class='desc'>A photo tagging game created with firebase
+		based on a Where's Waldo photo.</p>
+	    </li>
+	    <li id='soapbox'><a 
+		href='https://burnett-react-blogger.herokuapp.com/'>
+		    Soapbox (a tumblresque website) </a>
+		<p class='desc'>A mini-blogging app designed to emulate
+		a simplified tumblr. Created with React and firebase.</p>
+	    </li>
+	    <li id='battleship'><a href='/Battleship'>Battleship</a>
+		<p class='desc'>A battleship browser game created with
+		react.</p>
+	    </li>
+            <li id='library'><a href='/reactLibrary'>React Library</a>
+	        <p class='desc'>A library app created with react.</p>
+	    </li>
+            <li id='todo'><a href='/PocketDocket'>Pocket Docket</a>
+                <p class='desc'>A todo list app created with plain JS.</p>
+	    </li>
+	    <li id = 'tealinquent'>
 		<a href='/Tealinquent'>Tealinquent (Restaurant Page)</a>,
                 <a href='https://tealinquent.herokuapp.com/products'>
-	            Backend (Inventory app, in progress...)
+	            Inventory app ( in progress...)
 		</a>
+		<p class='desc'>A restaurant page created with plain JS and 
+                    and an inventory application built with node and mongoose.
+		</p>
             </li>
-            <li><a href='/Sketch'>Etch-a-Sketcher</a></li>
-	    <li><a href='/Calculator'>Calculator</a></li>
-            <li><a href='/TicTacToe'>Tic-Tac-Toe</a></li>
+            <li id='sketch'><a href='/Sketch'>Etch-a-Sketcher</a>
+		<p class='desc'>A mini "Etch-a-Sketch"-like app with a color
+		pallete made with JS. Grid size can be changed.</p>
+	    </li>
+	    <li id='calc'><a href='/Calculator'>Calculator</a>
+                <p class='desc'>
+		    A basic browser calculator made with plain JS.
+		</p>
+	    </li>
+            <li id='tictactoe'><a href='/TicTacToe'>Tic-Tac-Toe</a>
+                <p class='desc'>
+		    A tic-tac-toe browser game made with plain JS.
+		</p>
+	    </li>
         </ul>
 	</div>
 	<script src='index.js'></script>

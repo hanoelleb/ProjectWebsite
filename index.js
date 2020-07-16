@@ -1,4 +1,14 @@
+function addDetail(project) {
+    project.addEventListener('mouseover', () => { 
+        var desc = project.getElementsByClassName('desc')[0];
+	desc.style.display='block';
+    });
 
+    project.addEventListener('mouseout', () => { 
+        var desc = project.getElementsByClassName('desc')[0];
+        desc.style.display='none';
+    });
+}
 
 function makeFooter() {
      	
@@ -15,21 +25,6 @@ function makeFooter() {
 	      makeString1('\\_/ \\_/' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '\\/' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp', 5, 0, 2) + '<br>' +
 	      makeString1('`-\'', 5, 19, 4);
      document.body.append(p1);
-
-/*
-     var p2 = document.createElement('p');
-     p2.innerHTML = makeString1('/ \\_/ \\' + '&nbsp;&nbsp;&nbsp;' + '/\\' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-	     + '/\'' + '&nbsp;&nbsp;&nbsp;', 4, 0, 2);
-     document.body.append(p2);
-
-     var p3 = document.createElement('p');
-     p3.innerHTML = makeString1('>-(_)-<---`\'---,.---`\'', 4, 0, 2);
-     document.body.append(p3);
-     /*
-     var p2 = document.createElement('p');
-     document.body.append(p1);
-     document.body.append(p2);
-*/	
 }
 
 function makeString1(base, num, spaces, starting) {
@@ -53,5 +48,16 @@ function makeString1(base, num, spaces, starting) {
 
     return res;
 }
+
+addDetail(document.getElementById('weather'));
+addDetail(document.getElementById('waldo'));
+addDetail(document.getElementById('soapbox'));
+addDetail(document.getElementById('battleship'));
+addDetail(document.getElementById('library'));
+addDetail(document.getElementById('todo'));
+addDetail(document.getElementById('tealinquent'));
+addDetail(document.getElementById('sketch'));
+addDetail(document.getElementById('calc'));
+addDetail(document.getElementById('tictactoe'));
 
 makeFooter();

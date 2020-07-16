@@ -27,6 +27,11 @@ a {
     list-style: none; }
     .navbar ul li {
       margin-right: 3vw; }
+      .navbar ul li a {
+        color: black; }
+        .navbar ul li a:hover {
+          color: palegreen;
+          background: black; }
 
 .Project {
   display: flex;

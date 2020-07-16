@@ -10,21 +10,22 @@ function addDetail(project) {
     });
 }
 
-function makeFooter() {
-     	
-     var str2 = '  / \_/ \   /\        /\   / \_/ \   /\        /\   / \_/ \   /\        /\   / \_/ \   /\        /\   / \_/ \   /\        /\   / \_/ \ \n';
-     var str3 = '  >-(_)-<---`\'---,.---`\'--->-(_)-<---`\'---,.---`\'--->-(_)-<---`\'---,.---`\'--->-(_)-<---`\'---,.---`\'--->-(_)-<---`\'---,.---`\'--->-(_)-<\n';
-     var str4 = '  \_/ \_/        \/        \_/ \_/        \/        \_/ \_/        \/        \_/ \_/        \/        \_/ \_/        \/        \_/ \_/\n';
-     var str5 = '    `-\'                      `-\'                      `-\'                      `-\'                      `-\'                      `-\'  \n';
+function makeFooter(flowernum) {
+     var holder = document.createElement('div');
+     holder.style.display='flex';
+     holder.style.width = '150vw';
+     holder.style.overflow='hidden';
 
      var p1 = document.createElement('p');
-     p1.innerHTML = makeString1('_,-._', 5, 17, 3) + '<br>' + 
+     p1.innerHTML = makeString1('_,-._', flowernum, 17, 3) + '<br>' + 
 		    makeString1('/ \\_/ \\' + '&nbsp;&nbsp;&nbsp;' + '/\\' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-             + '/\\' + '&nbsp;&nbsp;&nbsp;', 5, 0, 2) + '<br>' + 
-	      makeString1('>-(_)-<---`\'--,.-`\'---', 5, 0, 2) + '<br>' +
-	      makeString1('\\_/ \\_/' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '\\/' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp', 5, 0, 2) + '<br>' +
-	      makeString1('`-\'', 5, 19, 4);
-     document.body.append(p1);
+             + '/\\' + '&nbsp;&nbsp;&nbsp;', flowernum, 0, 2) + '<br>' + 
+	      makeString1('>-(_)-<---`\'--,.-`\'---', flowernum, 0, 2) + '<br>' +
+	      makeString1('\\_/ \\_/' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '\\/' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp', flowernum, 0, 2) + '<br>' +
+	      makeString1('`-\'', flowernum, 19, 4);
+
+     holder.appendChild(p1);
+     document.body.append(holder);
 }
 
 function makeString1(base, num, spaces, starting) {
@@ -60,4 +61,13 @@ addDetail(document.getElementById('sketch'));
 addDetail(document.getElementById('calc'));
 addDetail(document.getElementById('tictactoe'));
 
-makeFooter();
+var flowers = 5;
+var mq = window.matchMedia( "(max-width: 570px)" );
+if (mq.matches) {
+    flowers = 3;
+}
+else {
+    // window width is greater than 570px
+}
+
+makeFooter(flowers);

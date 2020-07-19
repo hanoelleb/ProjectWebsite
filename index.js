@@ -56,6 +56,7 @@ addDetail(document.getElementById('waldo'));
 addDetail(document.getElementById('soapbox'));
 addDetail(document.getElementById('battleship'));
 addDetail(document.getElementById('library'));
+addDetail(document.getElementById('messenger'));
 addDetail(document.getElementById('todo'));
 addDetail(document.getElementById('tealinquent'));
 addDetail(document.getElementById('sketch'));

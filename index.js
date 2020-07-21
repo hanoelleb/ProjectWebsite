@@ -62,6 +62,7 @@ addDetail(document.getElementById('tealinquent'));
 addDetail(document.getElementById('sketch'));
 addDetail(document.getElementById('calc'));
 addDetail(document.getElementById('tictactoe'));
+addDetail(document.getElementById('three'));
 
 var flowers = 5;
 var mq = window.matchMedia( "(max-width: 570px)" );

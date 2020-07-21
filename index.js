@@ -63,6 +63,9 @@ addDetail(document.getElementById('sketch'));
 addDetail(document.getElementById('calc'));
 addDetail(document.getElementById('tictactoe'));
 addDetail(document.getElementById('three'));
+addDetail(document.getElementById('pass'));
+//use lfs for passenger
+
 
 var flowers = 5;
 var mq = window.matchMedia( "(max-width: 570px)" );

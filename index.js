@@ -64,7 +64,7 @@ addDetail(document.getElementById('calc'));
 addDetail(document.getElementById('tictactoe'));
 addDetail(document.getElementById('three'));
 addDetail(document.getElementById('pass'));
-addDetail(document.getElementBy(d('brick'));
+addDetail(document.getElementById('brick'));
 
 var flowers = 5;
 var mq = window.matchMedia( "(max-width: 570px)" );

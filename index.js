@@ -70,6 +70,32 @@ addDetail(document.getElementById('fuudie'));
 addDetail(document.getElementById('blog'));
 addDetail(document.getElementById('rubyblog'));
 
+document.getElementById('filter_list').style.display = 'none';
+
+$(document).ready(function() {
+    $('#filter').hover(function() {
+	$('#filter_list').css('display', 'flex');
+    });
+
+    $('#filter_list').mouseleave(function() { $(this).hide(); });
+    $('#filter_list li').hover(function() {
+        $(this).css({'color': 'black', 'background-color': 'palegreen'})
+    }, function() {
+        $(this).css({'color': 'palegreen', 'background-color': 'black'})
+    });
+
+    $('#filter_list li').click(function() {
+        var tag = $(this).text();
+	$('#project_list li').each( function() {
+	    var hasTag = $(this).hasClass(tag);
+            if (tag === 'All' || hasTag)
+		$(this).show();
+            else
+		$(this).hide();
+	})
+    });
+});
+
 var flowers = 5;
 var mq = window.matchMedia( "(max-width: 570px)" );
 if (mq.matches) {

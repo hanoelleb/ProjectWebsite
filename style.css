@@ -42,6 +42,13 @@ a {
   display: none;
   margin-left: 5vw; }
 
+#filter_list {
+  display: none;
+  flex-wrap: wrap;
+  width: 75vw; }
+  #filter_list li {
+    margin: 10px; }
+
 @keyframes color-change {
   from {
     background-color: black; }

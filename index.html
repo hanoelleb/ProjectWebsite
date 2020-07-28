@@ -26,15 +26,39 @@
 	</p>
 	<p>Other files such as the Unity apps and Android Apps I developed are available for download here as well as zip files and apk files respectively.</p>
 	<p>If you would like to check out my other projects, please feel free to click the repository link above.</p>
+        
+	<h3 id='filter'>Filter</h3>
+	<ul id='filter_list'>
+            <li>All</li>
+            <li>Front-End</li>
+            <li>Javascript</li>
+	    <li>Java</li>
+	    <li>C#</li>
+	    <li>Ruby</li>
+	    <li>ReactJS</li>
+	    <li>Sass</li>
+	    <li>EJS</li>
+	    <li>NodeJS</li>
+	    <li>Ruby-On-Rails</li>
+	    <li>Unity</li>
+	    <li>Android</li>
+	    <li>Heroku</li>
+	    <li>Firebase/BaaS</li>
+	    <li>MongoDB/DaaS</li>
+	    <li>Downloadable</li>
+	    <li>API</li>
+	</ul>
+
 	<div class='cursor'></div>
-	<ul>
+	<ul id='project_list'>
             <li>This very site!</li>
 	    <li id='mainsite'><a href='https://hanoelleb.github.io/main/'>
 	             My main site</a>
 		<p class='desc'>A website that acts as a hub for all my other projects/websites. Also linked on top of the page.</p>
 	    </li>
 
-            <li id='weather'><a href='/WeatherApp'>Weather App</a>
+            <li id='weather' class='Javascript ReactJS Front-End'>
+		 <a href='/WeatherApp'>Weather App</a>
 		 <p class='desc'>
 		    <a href='https://github.com/hanoelleb/WeatherApp'>
                     Link to Repository</a><br><br>
@@ -43,9 +67,10 @@
 		    query.</p>
 	    </li>
 
-            <li id='waldo'><a 
-                href='https://burnett-photo-tagging.herokuapp.com/'>
-		    Find Waldo App</a>
+            <li id='waldo' class='Javascript Heroku Firebase/BaaS'>
+		<a href='https://burnett-photo-tagging.herokuapp.com/'>
+		    Find Waldo App
+		</a>
 		<p class='desc'>
 		<a href='https://github.com/hanoelleb/Project_Tag'>
                     Link to Repository</a><br><br>
@@ -53,8 +78,8 @@
 		based on a Where's Waldo photo.</p>
 	    </li>
 
-	    <li id='soapbox'><a 
-		href='https://burnett-react-blogger.herokuapp.com/'>
+	    <li id='soapbox' class='Firebase/BaaS ReactJS Heroku Javascript'>
+		<a href='https://burnett-react-blogger.herokuapp.com/'>
 		    Soapbox (a tumblresque website) </a>
 		<p class='desc'>
 		<a href='https://github.com/hanoelleb/ProjectBlogger'>
@@ -63,7 +88,8 @@
 		a simplified tumblr. Created with React and firebase.</p>
 	    </li>
 
-	    <li id='battleship'><a href='/Battleship'>Battleship</a>
+	    <li id='battleship' class='ReactJS Javascript Front-End'>
+                <a href='/Battleship'>Battleship</a>
 		<p class='desc'>
 		<a href='https://github.com/hanoelleb/Battleship'>
                     Link to Repository</a><br><br>
@@ -71,14 +97,15 @@
 		react.</p>
 	    </li>
 
-            <li id='library'><a href='/reactLibrary'>React Library</a>
+            <li id='library' class='ReactJS Javascript Front-End'>
+                <a href='/reactLibrary'>React Library</a>
 	        <p class='desc'>
 		<a href='https://github.com/hanoelleb/reactLibrary'>
                     Link to Repository</a><br><br>
 		A library app created with react.</p>
 	    </li>
 
-	    <li id='messenger'>
+	    <li id='messenger' class='NodeJS Javascript Sass EJS'>
 		<a href='https://hanoelleb-mini-messenger.herokuapp.com/'>
 		    Mini Messenger</a>
 		<p class='desc'>
@@ -88,14 +115,16 @@
 		</p>
 	    </li>
 
-            <li id='todo'><a href='/PocketDocket'>Pocket Docket</a>
+            <li id='todo' class='Front-End Javascript'>
+		<a href='/PocketDocket'>Pocket Docket</a>
                 <p class='desc'>
 		<a href='https://github.com/hanoelleb/PocketDocket'>
                     Link to Repository</a><br><br>
 		A todo list app created with plain JS.</p>
 	    </li>
 
-	    <li id = 'tealinquent'>
+	    <li id = 'tealinquent' class='NodeJS Front-End Javascript 
+		MongoDB/Daas Heroku Sass EJS'>
 		<a href='/Tealinquent'>Tealinquent (Restaurant Page)</a>,
                 <a href='https://tealinquent.herokuapp.com/products'>
 	            Inventory app
@@ -111,7 +140,8 @@
 		</p>
             </li>
 
-            <li id='sketch'><a href='/Sketch'>Etch-a-Sketcher</a>
+            <li id='sketch' class='Front-End Javascript'>
+		<a href='/Sketch'>Etch-a-Sketcher</a>
 		<p class='desc'>
                 <a href='https://github.com/hanoelleb/Sketch'>
                     Link to Repository</a><br><br>
@@ -119,7 +149,8 @@
 		pallete made with JS. Grid size can be changed.</p>
 	    </li>
 
-	    <li id='calc'><a href='/Calculator'>Calculator</a>
+	    <li id='calc' class='Javascript Front-End'>
+		<a href='/Calculator'>Calculator</a>
                 <p class='desc'>
 		    <a href='https://github.com/hanoelleb/Calculator'>
                     Link to Repository</a><br><br>
@@ -127,7 +158,8 @@
 		</p>
 	    </li>
 
-            <li id='tictactoe'><a href='/TicTacToe'>Tic-Tac-Toe</a>
+            <li id='tictactoe' class='Javascript Front-End'>
+		<a href='/TicTacToe'>Tic-Tac-Toe</a>
                 <p class='desc'>
 		    <a href='https://github.com/hanoelleb/TicTacToe'>
 		        Link to Repository</a><br><br>
@@ -135,7 +167,8 @@
 		</p>
 	    </li>
 		
-        <li id='three'>Three-in-a-Row Game
+        <li id='three' class='C# Unity Downloadable'>
+	        Three-in-a-Row Game
 	        <p class='desc'>
                     <a href='./ThreeInARow.zip' download>Download game</a>
 		    <br><br>
@@ -150,7 +183,8 @@
 		    </p>
         </li>
 		
-	<li id='pass'>Passenger Game Demo
+	<li id='pass' class='C# Unity Downloadable'>
+	    Passenger Game Demo
 	    <p class='desc'>
 	    <a href='./Passenger.zip' download>Download game</a>
 	    <br><br>
@@ -161,7 +195,8 @@
 	    </p>
 	</li>
 
-	<li id='brick'>Brick Break Game
+	<li id='brick' class='C# Unity Downloadable'>
+	    Brick Break Game
             <p class='desc'>
                  <a href='./BrickBreak.zip' download>Download game</a>
                  <br><br>
@@ -176,7 +211,8 @@
                  </p>
         </li>
 		
-	<li id='idee'>Idee Android App
+	<li id='idee' class='Java Android Downloadable'>
+	    Idee Android App
             <p class='desc'>
                 <a href='./Idee/app-release.apk' download>
 		    Download app (apk)
@@ -193,7 +229,8 @@
 		</p>
 	</li>
 		
-	<li id='fuudie'>Fuudie Android App
+	<li id='fuudie' class='Java Android Downloadable'>
+            Fuudie Android App
             <p class='desc'>
                 <a href='./Fuudie/app-release.apk' download>
                     Download app (apk)
@@ -206,7 +243,9 @@
             </p>
         </li>
 
-        <li id="blog">BlogAPI, 
+        <li id="blog" class='Javascript NodeJS ReactJS Heroku 
+            MongoDB/DaaS Front End API'>
+            BlogAPI, 
             <a href="/BlogFrontAdmin">AdminSite</a>, 
             <a href="/BlogFrontViewer">ViewerSite</a>
                 <p class='desc'>
@@ -230,7 +269,7 @@
 	        </p>
         </li>
 
-	<li id='rubyblog'>[In progress...]
+	<li id='rubyblog' class='Ruby Ruby-On-Rails Heroku'>
 	    <a href='https://hanoelleb-ruby-blogger.herokuapp.com/'>
 		Rails Blog
 	    </a>
@@ -244,6 +283,7 @@
 
         </ul>
 	</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src='index.js'></script>
     </body>
 </html>

@@ -68,6 +68,7 @@ addDetail(document.getElementById('brick'));
 addDetail(document.getElementById('idee'));
 addDetail(document.getElementById('fuudie'));
 addDetail(document.getElementById('blog'));
+addDetail(document.getElementById('rubyblog'));
 
 var flowers = 5;
 var mq = window.matchMedia( "(max-width: 570px)" );

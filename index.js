@@ -69,6 +69,10 @@ addDetail(document.getElementById('idee'));
 addDetail(document.getElementById('fuudie'));
 addDetail(document.getElementById('blog'));
 addDetail(document.getElementById('rubyblog'));
+addDetail(document.getElementById('pomo'));
+addDetail(document.getElementById('survey'));
+addDetail(document.getElementById('tribute'));
+
 
 document.getElementById('filter_list').style.display = 'none';
 

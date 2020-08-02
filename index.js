@@ -72,7 +72,7 @@ addDetail(document.getElementById('rubyblog'));
 addDetail(document.getElementById('pomo'));
 addDetail(document.getElementById('survey'));
 addDetail(document.getElementById('tribute'));
-
+addDetail(document.getElementById('odinbook'));
 
 document.getElementById('filter_list').style.display = 'none';
 

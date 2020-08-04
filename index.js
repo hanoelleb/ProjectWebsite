@@ -73,6 +73,7 @@ addDetail(document.getElementById('pomo'));
 addDetail(document.getElementById('survey'));
 addDetail(document.getElementById('tribute'));
 addDetail(document.getElementById('odinbook'));
+addDetail(document.getElementById('painte'));
 
 document.getElementById('filter_list').style.display = 'none';
 

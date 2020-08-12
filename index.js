@@ -74,6 +74,7 @@ addDetail(document.getElementById('survey'));
 addDetail(document.getElementById('tribute'));
 addDetail(document.getElementById('odinbook'));
 addDetail(document.getElementById('painte'));
+addDetail(document.getElementById('life'));
 
 document.getElementById('filter_list').style.display = 'none';
 

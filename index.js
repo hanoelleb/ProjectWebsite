@@ -76,6 +76,7 @@ addDetail(document.getElementById('odinbook'));
 addDetail(document.getElementById('painte'));
 addDetail(document.getElementById('life'));
 addDetail(document.getElementById('sol'));
+addDetail(document.getElementById('forme'));
 
 document.getElementById('filter_list').style.display = 'none';
 

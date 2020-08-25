@@ -51,6 +51,7 @@ function makeString1(base, num, spaces, starting) {
 }
 
 addDetail(document.getElementById('mainsite'));
+addDetail(document.getElementById('hometown'));
 addDetail(document.getElementById('weather'));
 addDetail(document.getElementById('waldo'));
 addDetail(document.getElementById('soapbox'));

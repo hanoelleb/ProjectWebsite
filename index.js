@@ -78,6 +78,7 @@ addDetail(document.getElementById('painte'));
 addDetail(document.getElementById('life'));
 addDetail(document.getElementById('sol'));
 addDetail(document.getElementById('forme'));
+addDetail(document.getElementById('cranny'));
 
 document.getElementById('filter_list').style.display = 'none';
 

@@ -81,7 +81,7 @@ addDetail(document.getElementById('forme'));
 addDetail(document.getElementById('cranny'));
 addDetail(document.getElementById('nodelib'));
 addDetail(document.getElementById('pong'));
-
+addDetail(document.getElementById('duly'));
 
 document.getElementById('filter_list').style.display = 'none';
 

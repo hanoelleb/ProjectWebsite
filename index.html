@@ -1,468 +1,572 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='UTF-8'></meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-	<div class='navbar'>
-            <ul>
-		  <li>Hannah Burnett</li>
-		  <li><a href='https://hanoelleb.github.io/main'>
-		      Main Site</a></li>
-		  <li>i<a href='https://hometownherogame.wordpress.com/'>Dev Blog</a></li>
-		  <li><a href='https://github.com/hanoelleb?tab=repositories'>
-                      Repositories</a></li>
-	    </ul>
-	</div>
-	<h2>Projects</h2>
-	<div class='Projects'>
-	<p>Welcome! This page contains links to numerous projects I have created and deployed. All
-	   projects requiring a server are deployed on Heroku. If clicked, please allow a few seconds
-	   for the application to 'wake up'. Other front-end only applications are displayed through
-	   gitpages.
-	</p>
-	<p>Other files such as the Unity apps and Android Apps I developed are available for download here as well as zip files and apk files respectively.</p>
-	<p>If you would like to check out my other projects, please feel free to click the repository link above.</p>
-        
-	<h3 id='filter'>Filter</h3>
-	<ul id='filter_list'>
-            <li>All</li>
-            <li>Javascript</li>
-	    <li>Java</li>
-	    <li>C#</li>
-	    <li>Ruby</li>
-	    <li>ReactJS</li>
-	    <li>Redux</li>
-	    <li>Sass</li>
-	    <li>Bootstrap</li>
-	    <li>jQuery</li>
-	    <li>EJS</li>
-	    <li>NodeJS</li>
-	    <li>Ruby-On-Rails</li>
-	    <li>Spring</li>
-	    <li>Unity</li>
-	    <li>Android</li>
-	    <li>Heroku</li>
-	    <li>Firebase/BaaS</li>
-	    <li>MongoDB/DaaS</li>
-	    <li>PostgreSQL</li>
-	    <li>Downloadable</li>
-	    <li>Webpack</li>
-            <li>Gradle</li>
-	    <li>Front-End</li>
-	    <li>API</li>
-	    <li>Game</li>
-	</ul>
-
-	<div class='cursor'></div>
-	<ul id='project_list'>
-            <li class='Front-End jQuery Sass'>This very site!</li>
-
-	    <li id='mainsite' class='Front-End'>
-		<a href='https://hanoelleb.github.io/main/'>
-	             My main site</a>
-		<p class='desc'>A website that acts as a hub for all my other projects/websites. Also linked on top of the page.</p>
-	    </li>
-
-	    <li id='hometown' class='Unity C# Game'>Hometown Hero
-		<p class='desc'>
-                <a href='https://www.youtube.com/watch?v=ED2vNgmK0rI'>Link to trailer</a>
-		<br><br> 
-		My largest project and the primary subject of my developer blog, Hometown Hero is an upcoming shopkeeping simulation RPG.
-		Developed in Unity.</p>
-	    </li>
-
-            <li id='weather' class='Javascript ReactJS Front-End'>
-		 <a href='/WeatherApp'>Weather App</a>
-		 <p class='desc'>
-		    <a href='https://github.com/hanoelleb/WeatherApp'>
-                    Link to Repository</a><br><br>
-		    A simple weather application that uses the
-		    openweather API. Currently, only city names work in the
-		    query.</p>
-	    </li>
-
-            <li id='waldo' class='Javascript Heroku Firebase/BaaS Webpack Game'>
-		<a href='https://burnett-photo-tagging.herokuapp.com/'>
-		    Find Waldo App
-		</a>
-		<p class='desc'>
-		<a href='https://github.com/hanoelleb/Project_Tag'>
-                    Link to Repository</a><br><br>
-		A photo tagging game created with firebase
-		based on a Where's Waldo photo.</p>
-	    </li>
-
-	    <li id='soapbox' class='Firebase/BaaS ReactJS Heroku Javascript Front-End'>
-		<a href='https://burnett-react-blogger.herokuapp.com/'>
-		    Soapbox (a tumblresque website) </a>
-		<p class='desc'>
-		<a href='https://github.com/hanoelleb/ProjectBlogger'>
-                    Link to Repository</a><br><br>
-		A mini-blogging app designed to emulate
-		a simplified tumblr. Created with React and firebase.</p>
-	    </li>
-
-	    <li id='battleship' class='ReactJS Javascript Front-End Webpack Game'>
-                <a href='/Battleship'>Battleship</a>
-		<p class='desc'>
-		<a href='https://github.com/hanoelleb/Battleship'>
-                    Link to Repository</a><br><br>
-		A battleship browser game created with
-		react.</p>
-	    </li>
-
-            <li id='library' class='ReactJS Javascript Front-End'>
-                <a href='/reactLibrary'>React Library</a>
-	        <p class='desc'>
-		<a href='https://github.com/hanoelleb/reactLibrary'>
-                    Link to Repository</a><br><br>
-		A library app created with react.</p>
-	    </li>
-
-	    <li id='messenger' class='NodeJS Javascript Sass EJS '>
-		<a href='https://hanoelleb-mini-messenger.herokuapp.com/'>
-		    Mini Messenger</a>
-		<p class='desc'>
-                <a href='https://github.com/hanoelleb/ProjectMiniMessage'>
-                    Link to Repository</a><br><br>
-                 A simple app that uses Node to mimic a messaging interface.
-		</p>
-	    </li>
-
-            <li id='todo' class='Front-End Javascript Webpack'>
-		<a href='/PocketDocket'>Pocket Docket</a>
-                <p class='desc'>
-		<a href='https://github.com/hanoelleb/PocketDocket'>
-                    Link to Repository</a><br><br>
-		A todo list app created with plain JS.</p>
-	    </li>
-
-	    <li id = 'tealinquent' class='MongoDB/DaaS NodeJS Front-End Javascript Heroku Sass EJS Webpack'>
-		<a href='/Tealinquent'>Tealinquent (Restaurant Page)</a>,
-                <a href='https://tealinquent.herokuapp.com/products'>
-	            Inventory app
-		</a>
-		<p class='desc'>
-		    <a href='https://github.com/hanoelleb/Tealinquent'>
-                    Link to Repository (Restaurant Page)</a><br><br>
-
-	            <a href='https://github.com/hanoelleb/TealinquentBackend'>
-                    Link to Repository (Inventory App)</a><br><br>
-		    A restaurant page created with plain JS and 
-                    and an inventory application built with node and mongoose.
-		</p>
-            </li>
-
-	    <li id='pomo' class='Front-End Javascript Sass jQuery'>
-                <a href='/pomodoro'>Pomodoro Timer</a>
-		<p class='desc'>
-		    <a href='https://github.com/hanoelleb/pomodoro'>
-			Link to Repository</a>
-		    <br><br>
-		    A timer app based on the pomodoro time-management method,
-		    featuring Pomo the Tomato. Utilizes Sass, jQuery, and CSS
-		    animation.
-		</p>
-	    </li>
-
-            <li id='sketch' class='Front-End Javascript'>
-		<a href='/Sketch'>Etch-a-Sketcher</a>
-		<p class='desc'>
-                <a href='https://github.com/hanoelleb/Sketch'>
-                    Link to Repository</a><br><br>
-		A mini "Etch-a-Sketch"-like app with a color
-		pallete made with JS. Grid size can be changed.</p>
-	    </li>
-
-	    <li id='calc' class='Javascript Front-End'>
-		<a href='/Calculator'>Calculator</a>
-                <p class='desc'>
-		    <a href='https://github.com/hanoelleb/Calculator'>
-                    Link to Repository</a><br><br>
-		    A basic browser calculator made with plain JS.
-		</p>
-	    </li>
-
-            <li id='tictactoe' class='Javascript Front-End Game'>
-		<a href='/TicTacToe'>Tic-Tac-Toe</a>
-                <p class='desc'>
-		    <a href='https://github.com/hanoelleb/TicTacToe'>
-		        Link to Repository</a><br><br>
-		    A tic-tac-toe browser game made with plain JS.
-		</p>
-	    </li>
-
-	    <li id='pong' class='Front-End Javascript Game'>
-		<a href='/pong'>Pong</a>
-		<p class='desc'>
-		<a href='https://github.com/hanoelleb/pong'>Link to Repository</a>
-		<br><br>
-		    The classic game remade for browsers with HTML's Canvas API and javascript.
-		</p>
-	    </li>
-	
-	    <li id='survey' class='Front-End'>
-                <a href='/surveyPage'>Survey Page</a>
-
-		<p class='desc'>
-		    <a href='https://github.com/hanoelleb/surveyPage'>
-                    Link to Repository</a>
-                    <br><br>
-		    A simple, front-end only tribute page for HTML 
-		    form practice.
-		</p>
-	    </li>
-
-	    <li id='tribute' class='Front-End'>
-		<a href='/tributePage'>Tribute Page for Mary Wollstonecraft
-		</a>
-		
-		<p class='desc'>
-		    <a href='https://github.com/hanoelleb/tributePage'>
-                    Link to Repository</a>
-		    <br><br>
-		    A simple, front-end only tribute page dedicated to 
-		    Mary Wollstonecraft.
-		</p>
-	    </li>
-
-	    <li id='nodelib' class='Javascript NodeJS MongoDB/DaaS EJS'>
-		<a href='http://hanoelleb-node-library.herokuapp.com/catalog'>Node Library</a>
-		<p class='desc'>
-		    <a href='https://github.com/hanoelleb/NodeLibrary'>Link to Repository</a>
-		    <br><br>
-		    A simple express application that uses MongoDB for the backend that follows <a href='https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction'>
-			    this tutorial</a> by Mozilla.
-		</p>
-	    </li>
-
-        <li id='three' class='C# Unity Downloadable Game'>
-	        Three-in-a-Row Game
-	        <p class='desc'>
-                    <a href='./ThreeInARow.zip' download>Download game</a>
-		    <br><br>
-		    <a href='https://github.com/hanoelleb/ThreeInARow'>
-			Link to Repository
-		    </a>
-		    <br><br>
-                        A game similar to Bejeweled/Candy Crush. 
-			Swap three gems in a row to earn points. 
-			To run, extract and double-click the application 
-                        called ThreeInARow. Developed in Unity.
-		    </p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Portfolio | Hannah Burnett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>Hannah Burnett</li>
+        <li><a href="https://hanoelleb.github.io/main"> Main Site</a></li>
+        <li><a href="https://hometownherogame.wordpress.com/">Dev Blog</a></li>
+        <li>
+          <a href="https://github.com/hanoelleb?tab=repositories">
+            Repositories</a
+          >
         </li>
-		
-	<li id='pass' class='C# Unity Downloadable Game'>
-	    Passenger Game Demo
-	    <p class='desc'>
-	    <a href='./Passenger.zip' download>Download game</a>
-	    <br><br>
-	    A horror game demo made in Unity3D to practice 
-	    utilizing downloadable Unity assets and 3D game mechanics.
-	    To run, extract and double-click the application
-            called Project Train. Developed in Unity.
-	    </p>
-	</li>
+      </ul>
+    </div>
+    <h2>Projects</h2>
+    <div class="Projects">
+      <p>
+        Welcome! This page contains links to numerous projects I have created
+        and deployed. All projects requiring a server are deployed on Heroku. If
+        clicked, please allow a few seconds for the application to 'wake up'.
+        Other front-end only applications are displayed through gitpages.
+      </p>
+      <p>
+        Other files such as the Unity apps and Android Apps I developed are
+        available for download here as well as zip files and apk files
+        respectively.
+      </p>
+      <p>
+        If you would like to check out my other projects, please feel free to
+        click the repository link above.
+      </p>
 
-	<li id='brick' class='C# Unity Downloadable Game'>
-	    Brick Break Game
-            <p class='desc'>
-                 <a href='./BrickBreak.zip' download>Download game</a>
-                 <br><br>
-                 <a href='https://github.com/hanoelleb/BrickBreak'>
-                      Link to Repository
-                 </a>
-                 <br><br>
-                    A remake of the classic Break Out game. Hit the ball 
-		    with your paddle to break all the bricks. To run, extract 
-                    and double-click the application called BrickBreak. 
-		    Developed in Unity.
-                 </p>
-        </li>
-		
-	<li id='sol' class='C# Unity Downloadable Game'>
-	    Solitaire
-	    <p class='desc'>
-	    <a href='./Solitaire.zip' download>Download game</a>
-	    <br><br>
-	    The classic card game developed in Unity, utilizing several EventSystems interfaces.
-	    </p>
-	</li>
-		
-	<li id='idee' class='Java Android Downloadable Gradle App'>
-	    Idee Android App
-            <p class='desc'>
-                <a href='./Idee/app-release.apk' download>
-		    Download app (apk)
-	        </a>
-		<br><br>
-                <a href='https://github.com/hanoelleb/Project-Me'>
-		    Link to Repository
-		</a>
-		<br><br>
-                    A  simple app that uses JSoup to parse the web for 
-		    info on different personality test results like 
-		    Myers-Briggs and Enneagram and for spiritual 
-		    personality guides like Eastern and Western astrology.
-		</p>
-	</li>
-		
-	<li id='fuudie' class='Java Android Downloadable Gradle App'>
-            Fuudie Android App
-            <p class='desc'>
-                <a href='./Fuudie/app-release.apk' download>
-                    Download app (apk)
-                </a>
-                <br><br>
-                    Originally developed as a group class project, 
-		    this app utilizes the Yelp Fusion API to find 
-		    restaurants that adhere to the user's preferences 
-		    based on their profile and app search history.
-            </p>
+      <h3 id="filter">Filter</h3>
+      <ul id="filter_list">
+        <li>All</li>
+        <li>Javascript</li>
+        <li>Typescript</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Ruby</li>
+        <li>ReactJS</li>
+        <li>NextJS</li>
+        <li>Redux</li>
+        <li>Sass</li>
+        <li>Bootstrap</li>
+        <li>jQuery</li>
+        <li>EJS</li>
+        <li>NodeJS</li>
+        <li>Ruby-On-Rails</li>
+        <li>Spring</li>
+        <li>Unity</li>
+        <li>Android</li>
+        <li>Heroku</li>
+        <li>Firebase/BaaS</li>
+        <li>MongoDB/DaaS</li>
+        <li>PostgreSQL</li>
+        <li>Downloadable</li>
+        <li>Webpack</li>
+        <li>Gradle</li>
+        <li>Front-End</li>
+        <li>API</li>
+        <li>Game</li>
+      </ul>
+
+      <div class="cursor"></div>
+      <ul id="project_list">
+        <li class="Front-End jQuery Sass">This very site!</li>
+
+        <li id="mainsite" class="Front-End">
+          <a href="https://hanoelleb.github.io/main/"> My main site</a>
+          <p class="desc">
+            A website that acts as a hub for all my other projects/websites.
+            Also linked on top of the page.
+          </p>
         </li>
 
-        <li id="blog" class='Javascript NodeJS ReactJS Heroku 
-            MongoDB/DaaS Front End API'>
-            BlogAPI, 
-            <a href="/BlogFrontAdmin">AdminSite</a>, 
-            <a href="/BlogFrontViewer">ViewerSite</a>
-                <p class='desc'>
-                    <a href="https://github.com/hanoelleb/BlogApi">
-                       Link to Blog API Repository
-                    </a>
-		    <br><br>
-                    <a href="https://github.com/hanoelleb/BlogFrontAdmin">
-                        Link to Admin Repository
-                    </a>
-		    <br><br>
-                    <a href="https://github.com/hanoelleb/BlogFrontViewer">
-                        Link to Viewer Repository
-		    </a>
-		    <br><br>
-		    A simple pure backend blog API for personal use and two 
-		    frontend React websites that utilize the API. One is 
-		    intended for the admin of the site in order to 
-		    create/edit/remove posts, and the other is for viewers 
-		    to see the blog posts and comment.
-	        </p>
+        <li id="mimSite" class="'Front-End ReactJS NextJS Typescript">
+          <a href="https://www.madeinmelostead.com"
+            >Made in Melostead Website</a
+          >
+          <p class="desc">
+            A website for my game in development Made in Melostead. Includes a
+            blog that uses WordPress as a headless CMS, a character
+            customization demo that utilizes HTML Canvas, and more. Developed
+            with NextJS.
+          </p>
         </li>
 
-	<li id='rubyblog' class='Ruby Ruby-On-Rails Heroku PostgreSQL '>
-	    <a href='https://hanoelleb-ruby-blogger.herokuapp.com/'>
-		Rails Blog
-	    </a>
+        <li id="hometown" class="Unity C# Game">
+          Hometown Hero
+          <p class="desc">
+            <a href="https://www.youtube.com/watch?v=ED2vNgmK0rI"
+              >Link to trailer</a
+            >
+            <br /><br />
+            My largest project and the primary subject of my developer blog,
+            Hometown Hero is an upcoming shopkeeping simulation RPG. Developed
+            in Unity.
+          </p>
+        </li>
 
-	    <p class='desc'>
-	        <a href=''>Link to Repository</a>
-		<br><br>
-		A blogging site created with Ruby on Rails. Based on steps 10-15 of <a href='http://tutorials.jumpstartlab.com/projects/blogger.html'>this tutorial.</a>
-	    </p>
-	</li>
+        <li id="weather" class="Javascript ReactJS Front-End">
+          <a href="/WeatherApp">Weather App</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/WeatherApp">
+              Link to Repository</a
+            ><br /><br />
+            A simple weather application that uses the openweather API.
+            Currently, only city names work in the query.
+          </p>
+        </li>
 
-	<li id='odinbook' class='MongoDB/DaaS Javascript jQuery Sass 
-	    EJS NodeJS Heroku Front-End'>
-            <a href='https://hanoelleb-odinbook.herokuapp.com/'>
-                OdinBook</a>
-	    <p class='desc'>
-	        <a href='https://github.com/hanoelleb/OdinBook'>
-                    Link to Repository
-		</a>
-		<br><br>
-		A mini version of facebook. Users can create posts, like posts, comment on posts, make and view each other's profiles, become friends with a friend request system, and have a timeline that includes their posts and all their friend's posts. Created with Node, Express, MongoDB, jQuery, and Sass.
-	    </p>
-	</li>
+        <li id="waldo" class="Javascript Heroku Firebase/BaaS Webpack Game">
+          <a href="https://burnett-photo-tagging.herokuapp.com/">
+            Find Waldo App
+          </a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/Project_Tag">
+              Link to Repository</a
+            ><br /><br />
+            A photo tagging game created with firebase based on a Where's Waldo
+            photo.
+          </p>
+        </li>
 
-	<li id='painte' class='Front-End jQuery Sass Javascript NodeJS Heroku Game'>
-            <a href='https://painte.herokuapp.com/'>Painte</a>
-	    <p class='desc'>
-	        <a href='https://github.com/hanoelleb/painte'>
-		    Link to Repository
-		</a>
-		<br><br>
-		An online multiplayer game akin to Pictionary or Pinturillo. Created with NodeJS, jQuery, and Sass. Utilizes the Socket.IO api. Currently only one room.
-	    </p>
-	</li>
+        <li
+          id="soapbox"
+          class="Firebase/BaaS ReactJS Heroku Javascript Front-End"
+        >
+          <a href="https://burnett-react-blogger.herokuapp.com/">
+            Soapbox (a tumblresque website)
+          </a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/ProjectBlogger">
+              Link to Repository</a
+            ><br /><br />
+            A mini-blogging app designed to emulate a simplified tumblr. Created
+            with React and firebase.
+          </p>
+        </li>
 
-        <li id='life' class='Java Downloadable Game '>
-            Game of Life
-            <p class='desc'>
-	        <a href='https://github.com/hanoelleb/GameOfLife'>Link to Repository</a>
-		<br><br>
-                <a href='./Life/gameOfLife.jar' download>
-                    Download jar
-                </a>
-                <br><br>
-                    JavaFX application based on Conway's Game of Life.
-            </p>
-	</li>
+        <li id="battleship" class="ReactJS Javascript Front-End Webpack Game">
+          <a href="/Battleship">Battleship</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/Battleship">
+              Link to Repository</a
+            ><br /><br />
+            A battleship browser game created with react.
+          </p>
+        </li>
 
-	<li id='forme' class='Java Javascript API Gradle PostgreSQL Heroku 
-		ReactJS Front-End '>
-		Forme API,
-		<a href='https://hanoelleb.github.io/forme-front/'>
-                    Front-End
-		</a>
-	    <p class='desc'>
-	        <a href='https://github.com/hanoelleb/forme'>
-                    Link to API Repository
-		</a>
-		<br><br>
-		<a href='https://github.com/hanoelleb/forme-front'>
-                    Link to Front-End Repository
-		</a>
-		<br><br>
-		A semi-RESTful exercise tracker API implemented with Java and 
-		Jersey. Users can create accounts, view their exercise logs, 
-		and add to their log. Secured with Json Web Tokens and deployed
-		in Heroku as a war file and with a postgres database.
-                <br><br>
-                An accompanying React front-end utilizes the API and provides 
-		a GUI for interacting with it. 
-	    </p>
-	</li>
+        <li id="library" class="ReactJS Javascript Front-End">
+          <a href="/reactLibrary">React Library</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/reactLibrary">
+              Link to Repository</a
+            ><br /><br />
+            A library app created with react.
+          </p>
+        </li>
 
-	<li id='cranny' class='Java Spring Gradle PostgreSQL Front-End Bootstrap jQuery Heroku' > 
-	    <a href='https://book-n-cranny.herokuapp.com/'>Book 'n Cranny</a>, <a href='https://admin-bookncranny.herokuapp.com/admin-portal'>Admin Portal</a>
+        <li id="messenger" class="NodeJS Javascript Sass EJS">
+          <a href="https://hanoelleb-mini-messenger.herokuapp.com/">
+            Mini Messenger</a
+          >
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/ProjectMiniMessage">
+              Link to Repository</a
+            ><br /><br />
+            A simple app that uses Node to mimic a messaging interface.
+          </p>
+        </li>
 
-	    <p class='desc'>
-	    	<a href='https://github.com/hanoelleb/bookncranny'>Link to Store Repository</a>
-		<br><br>
-		<a href='https://github.com/hanoelleb/admin-bookncranny'>Link to Admin Repository</a>
-		<br><br>
-		A practice full-stack ecommerce bookstore application and accompanying admin portal application developed with Spring Boot, Spring Security, and Hibernate. Both applications share
-                a postgresql database hosted on heroku. 
-		<br><br> 
-		In the ecommerce app, users can create and sign into their accounts, save information (shipping, payment), add items to their cart, check out items, and view previous orders.
-		<br><br>
-		In the admin portal, the admin (username 'admin' and password 'test') can view all books in the inventory, add new books, update information, and remove books.
-                <br><br>
-		Thymeleaf is used as the templating engine and the pages are decorated through Bootstrap. Currently, there are some issues with the images displaying on Heroku.
-	    </p>
-	</li>
+        <li id="todo" class="Front-End Javascript Webpack">
+          <a href="/PocketDocket">Pocket Docket</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/PocketDocket">
+              Link to Repository</a
+            ><br /><br />
+            A todo list app created with plain JS.
+          </p>
+        </li>
 
-	<li id='duly' class='Javascript NodeJS ReactJS Redux MongoDB/DaaS Front-End API Heroku '>
-		<a href='/duly'>Duly,</a> Duly API
-		
-		<p class='desc'>
-		      <a href='https://github.com/hanoelleb/duly'>Link to Front-End Repository</a>
-                      <br><br>
-                      <a href='https://github.com/hanoelleb/notebook'>Link to API Repository</a>
-                      <br><br>
-                      A simple notebook application divided into a React app front-end and an API. Users can create, update, and delete complex notes (using a tinyMCE editor).
-		      <br><br>
-		      Users can also create an account in order to save these notes and access them later.
-		      <br><br>
-		      The API is secured with json web tokens and is hosted on Heroku.
-		</p>
-	</li>
+        <li
+          id="tealinquent"
+          class="MongoDB/DaaS NodeJS Front-End Javascript Heroku Sass EJS Webpack"
+        >
+          <a href="/Tealinquent">Tealinquent (Restaurant Page)</a>,
+          <a href="https://tealinquent.herokuapp.com/products">
+            Inventory app
+          </a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/Tealinquent">
+              Link to Repository (Restaurant Page)</a
+            ><br /><br />
 
-        </ul>
-	</div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src='index.js'></script>
-    </body>
+            <a href="https://github.com/hanoelleb/TealinquentBackend">
+              Link to Repository (Inventory App)</a
+            ><br /><br />
+            A restaurant page created with plain JS and and an inventory
+            application built with node and mongoose.
+          </p>
+        </li>
+
+        <li id="pomo" class="Front-End Javascript Sass jQuery">
+          <a href="/pomodoro">Pomodoro Timer</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/pomodoro">
+              Link to Repository</a
+            >
+            <br /><br />
+            A timer app based on the pomodoro time-management method, featuring
+            Pomo the Tomato. Utilizes Sass, jQuery, and CSS animation.
+          </p>
+        </li>
+
+        <li id="sketch" class="Front-End Javascript">
+          <a href="/Sketch">Etch-a-Sketcher</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/Sketch"> Link to Repository</a
+            ><br /><br />
+            A mini "Etch-a-Sketch"-like app with a color pallete made with JS.
+            Grid size can be changed.
+          </p>
+        </li>
+
+        <li id="calc" class="Javascript Front-End">
+          <a href="/Calculator">Calculator</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/Calculator">
+              Link to Repository</a
+            ><br /><br />
+            A basic browser calculator made with plain JS.
+          </p>
+        </li>
+
+        <li id="tictactoe" class="Javascript Front-End Game">
+          <a href="/TicTacToe">Tic-Tac-Toe</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/TicTacToe">
+              Link to Repository</a
+            ><br /><br />
+            A tic-tac-toe browser game made with plain JS.
+          </p>
+        </li>
+
+        <li id="pong" class="Front-End Javascript Game">
+          <a href="/pong">Pong</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/pong">Link to Repository</a>
+            <br /><br />
+            The classic game remade for browsers with HTML's Canvas API and
+            javascript.
+          </p>
+        </li>
+
+        <li id="survey" class="Front-End">
+          <a href="/surveyPage">Survey Page</a>
+
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/surveyPage">
+              Link to Repository</a
+            >
+            <br /><br />
+            A simple, front-end only tribute page for HTML form practice.
+          </p>
+        </li>
+
+        <li id="tribute" class="Front-End">
+          <a href="/tributePage">Tribute Page for Mary Wollstonecraft </a>
+
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/tributePage">
+              Link to Repository</a
+            >
+            <br /><br />
+            A simple, front-end only tribute page dedicated to Mary
+            Wollstonecraft.
+          </p>
+        </li>
+
+        <li id="nodelib" class="Javascript NodeJS MongoDB/DaaS EJS">
+          <a href="http://hanoelleb-node-library.herokuapp.com/catalog"
+            >Node Library</a
+          >
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/NodeLibrary"
+              >Link to Repository</a
+            >
+            <br /><br />
+            A simple express application that uses MongoDB for the backend that
+            follows
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction"
+            >
+              this tutorial</a
+            >
+            by Mozilla.
+          </p>
+        </li>
+
+        <li id="three" class="C# Unity Downloadable Game">
+          Three-in-a-Row Game
+          <p class="desc">
+            <a href="./ThreeInARow.zip" download>Download game</a>
+            <br /><br />
+            <a href="https://github.com/hanoelleb/ThreeInARow">
+              Link to Repository
+            </a>
+            <br /><br />
+            A game similar to Bejeweled/Candy Crush. Swap three gems in a row to
+            earn points. To run, extract and double-click the application called
+            ThreeInARow. Developed in Unity.
+          </p>
+        </li>
+
+        <li id="pass" class="C# Unity Downloadable Game">
+          Passenger Game Demo
+          <p class="desc">
+            <a href="./Passenger.zip" download>Download game</a>
+            <br /><br />
+            A horror game demo made in Unity3D to practice utilizing
+            downloadable Unity assets and 3D game mechanics. To run, extract and
+            double-click the application called Project Train. Developed in
+            Unity.
+          </p>
+        </li>
+
+        <li id="brick" class="C# Unity Downloadable Game">
+          Brick Break Game
+          <p class="desc">
+            <a href="./BrickBreak.zip" download>Download game</a>
+            <br /><br />
+            <a href="https://github.com/hanoelleb/BrickBreak">
+              Link to Repository
+            </a>
+            <br /><br />
+            A remake of the classic Break Out game. Hit the ball with your
+            paddle to break all the bricks. To run, extract and double-click the
+            application called BrickBreak. Developed in Unity.
+          </p>
+        </li>
+
+        <li id="sol" class="C# Unity Downloadable Game">
+          Solitaire
+          <p class="desc">
+            <a href="./Solitaire.zip" download>Download game</a>
+            <br /><br />
+            The classic card game developed in Unity, utilizing several
+            EventSystems interfaces.
+          </p>
+        </li>
+
+        <li id="idee" class="Java Android Downloadable Gradle App">
+          Idee Android App
+          <p class="desc">
+            <a href="./Idee/app-release.apk" download> Download app (apk) </a>
+            <br /><br />
+            <a href="https://github.com/hanoelleb/Project-Me">
+              Link to Repository
+            </a>
+            <br /><br />
+            A simple app that uses JSoup to parse the web for info on different
+            personality test results like Myers-Briggs and Enneagram and for
+            spiritual personality guides like Eastern and Western astrology.
+          </p>
+        </li>
+
+        <li id="fuudie" class="Java Android Downloadable Gradle App">
+          Fuudie Android App
+          <p class="desc">
+            <a href="./Fuudie/app-release.apk" download> Download app (apk) </a>
+            <br /><br />
+            Originally developed as a group class project, this app utilizes the
+            Yelp Fusion API to find restaurants that adhere to the user's
+            preferences based on their profile and app search history.
+          </p>
+        </li>
+
+        <li
+          id="blog"
+          class="Javascript NodeJS ReactJS Heroku MongoDB/DaaS Front End API"
+        >
+          BlogAPI,
+          <a href="/BlogFrontAdmin">AdminSite</a>,
+          <a href="/BlogFrontViewer">ViewerSite</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/BlogApi">
+              Link to Blog API Repository
+            </a>
+            <br /><br />
+            <a href="https://github.com/hanoelleb/BlogFrontAdmin">
+              Link to Admin Repository
+            </a>
+            <br /><br />
+            <a href="https://github.com/hanoelleb/BlogFrontViewer">
+              Link to Viewer Repository
+            </a>
+            <br /><br />
+            A simple pure backend blog API for personal use and two frontend
+            React websites that utilize the API. One is intended for the admin
+            of the site in order to create/edit/remove posts, and the other is
+            for viewers to see the blog posts and comment.
+          </p>
+        </li>
+
+        <li id="rubyblog" class="Ruby Ruby-On-Rails Heroku PostgreSQL">
+          <a href="https://hanoelleb-ruby-blogger.herokuapp.com/">
+            Rails Blog
+          </a>
+
+          <p class="desc">
+            <a href="">Link to Repository</a>
+            <br /><br />
+            A blogging site created with Ruby on Rails. Based on steps 10-15 of
+            <a href="http://tutorials.jumpstartlab.com/projects/blogger.html"
+              >this tutorial.</a
+            >
+          </p>
+        </li>
+
+        <li
+          id="odinbook"
+          class="MongoDB/DaaS Javascript jQuery Sass EJS NodeJS Heroku Front-End"
+        >
+          <a href="https://hanoelleb-odinbook.herokuapp.com/"> OdinBook</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/OdinBook">
+              Link to Repository
+            </a>
+            <br /><br />
+            A mini version of facebook. Users can create posts, like posts,
+            comment on posts, make and view each other's profiles, become
+            friends with a friend request system, and have a timeline that
+            includes their posts and all their friend's posts. Created with
+            Node, Express, MongoDB, jQuery, and Sass.
+          </p>
+        </li>
+
+        <li
+          id="painte"
+          class="Front-End jQuery Sass Javascript NodeJS Heroku Game"
+        >
+          <a href="https://painte.herokuapp.com/">Painte</a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/painte">
+              Link to Repository
+            </a>
+            <br /><br />
+            An online multiplayer game akin to Pictionary or Pinturillo. Created
+            with NodeJS, jQuery, and Sass. Utilizes the Socket.IO api. Currently
+            only one room.
+          </p>
+        </li>
+
+        <li id="life" class="Java Downloadable Game">
+          Game of Life
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/GameOfLife"
+              >Link to Repository</a
+            >
+            <br /><br />
+            <a href="./Life/gameOfLife.jar" download> Download jar </a>
+            <br /><br />
+            JavaFX application based on Conway's Game of Life.
+          </p>
+        </li>
+
+        <li
+          id="forme"
+          class="Java Javascript API Gradle PostgreSQL Heroku ReactJS Front-End"
+        >
+          Forme API,
+          <a href="https://hanoelleb.github.io/forme-front/"> Front-End </a>
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/forme">
+              Link to API Repository
+            </a>
+            <br /><br />
+            <a href="https://github.com/hanoelleb/forme-front">
+              Link to Front-End Repository
+            </a>
+            <br /><br />
+            A semi-RESTful exercise tracker API implemented with Java and
+            Jersey. Users can create accounts, view their exercise logs, and add
+            to their log. Secured with Json Web Tokens and deployed in Heroku as
+            a war file and with a postgres database.
+            <br /><br />
+            An accompanying React front-end utilizes the API and provides a GUI
+            for interacting with it.
+          </p>
+        </li>
+
+        <li
+          id="cranny"
+          class="Java Spring Gradle PostgreSQL Front-End Bootstrap jQuery Heroku"
+        >
+          <a href="https://book-n-cranny.herokuapp.com/">Book 'n Cranny</a>,
+          <a href="https://admin-bookncranny.herokuapp.com/admin-portal"
+            >Admin Portal</a
+          >
+
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/bookncranny"
+              >Link to Store Repository</a
+            >
+            <br /><br />
+            <a href="https://github.com/hanoelleb/admin-bookncranny"
+              >Link to Admin Repository</a
+            >
+            <br /><br />
+            A practice full-stack ecommerce bookstore application and
+            accompanying admin portal application developed with Spring Boot,
+            Spring Security, and Hibernate. Both applications share a postgresql
+            database hosted on heroku.
+            <br /><br />
+            In the ecommerce app, users can create and sign into their accounts,
+            save information (shipping, payment), add items to their cart, check
+            out items, and view previous orders.
+            <br /><br />
+            In the admin portal, the admin (username 'admin' and password
+            'test') can view all books in the inventory, add new books, update
+            information, and remove books.
+            <br /><br />
+            Thymeleaf is used as the templating engine and the pages are
+            decorated through Bootstrap. Currently, there are some issues with
+            the images displaying on Heroku.
+          </p>
+        </li>
+
+        <li
+          id="duly"
+          class="Javascript NodeJS ReactJS Redux MongoDB/DaaS Front-End API Heroku"
+        >
+          <a href="/duly">Duly,</a> Duly API
+
+          <p class="desc">
+            <a href="https://github.com/hanoelleb/duly"
+              >Link to Front-End Repository</a
+            >
+            <br /><br />
+            <a href="https://github.com/hanoelleb/notebook"
+              >Link to API Repository</a
+            >
+            <br /><br />
+            A simple notebook application divided into a React app front-end and
+            an API. Users can create, update, and delete complex notes (using a
+            tinyMCE editor).
+            <br /><br />
+            Users can also create an account in order to save these notes and
+            access them later.
+            <br /><br />
+            The API is secured with json web tokens and is hosted on Heroku.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
